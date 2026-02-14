@@ -1,0 +1,73 @@
+.settings-screen {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+}
+
+.settings-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.settings-title {
+  font-size: 48px;
+  color: #667eea;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.settings-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.radio-label:hover {
+  background: #f8f9fa;
+}
+
+.radio-label input[type="radio"] {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+.radio-label span {
+  flex: 1;
+}
+
+.back-button {
+  background: #6c757d;
+  color: white;
+  font-size: 24px;
+  padding: 20px;
+  width: 100%;
+}
