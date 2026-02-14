@@ -20,7 +20,7 @@ export default function AnswerModeWithoutMemory({
   const [selectedHour, setSelectedHour] = useState<number | null>(null)
   const [selectedMinute, setSelectedMinute] = useState<number | null>(null)
   const [correctCount, setCorrectCount] = useState(0)
-  const [startTime, setStartTime] = useState<number>(Date.now())
+  const [startTime] = useState<number>(Date.now())
   const [timeLeft, setTimeLeft] = useState<number | null>(settings.timeLimit)
   const [isCorrect, setIsCorrect] = useState(false)
 

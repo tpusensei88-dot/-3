@@ -9,6 +9,9 @@ import Settings from './components/Settings'
 import { GameMode, GameResult, Settings as SettingsType } from './types'
 
 function App() {
+  // デバッグ用: アプリが読み込まれているか確認
+  console.log('App component loaded')
+  
   const [currentMode, setCurrentMode] = useState<GameMode | 'menu' | 'settings' | 'result'>('menu')
   const [gameResult, setGameResult] = useState<GameResult | null>(null)
   const [keyUnlockCleared, setKeyUnlockCleared] = useState(false)

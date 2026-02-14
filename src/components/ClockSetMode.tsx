@@ -15,7 +15,7 @@ export default function ClockSetMode({ onComplete, onBack, settings }: ClockSetM
   const [targetTime, setTargetTime] = useState<Time>(generateRandomTime())
   const [currentTime, setCurrentTime] = useState<Time>({ hour: 12, minute: 0 })
   const [correctCount, setCorrectCount] = useState(0)
-  const [startTime, setStartTime] = useState<number>(Date.now())
+  const [startTime] = useState<number>(Date.now())
   const [timeLeft, setTimeLeft] = useState<number | null>(settings.timeLimit)
   const [isCorrect, setIsCorrect] = useState(false)
 
